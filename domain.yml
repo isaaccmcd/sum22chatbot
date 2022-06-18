@@ -1,0 +1,55 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- milp_facts
+- milp_loc_details
+- mood_great
+- mood_unhappy
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_milp_facts:
+  - text: Milpitas is located in Santa Clara County, California and borders Alameda County to its north. This often makes Milpitas referred to as the Gateway to the Silicon Valley!
+  - text: Milpitas was first settled in 1852! and became an officially incorporated city on Jan 26, 1954
+  - text: The total land area of Milpitas is 13.52 square miles, or 35 square km
+  - text: Milpitas is only 20ft above sea level! Not too surprising given its proximity to the bay.
+  - text: Before Milpitas was a city, it was first inhabited by Tamien people, a linguistic division of the Ohlone people
+  - text: Milpitas was almost anexed by San Jose in the 1950s
+  - text: The name 'Milpitas' is the plural diminutive of 'milpa', which is Spanish for 'cornfield'. Milpitas literally means 'Place of little cornfields'
+  - text: Milpitas is bordered to the east by the Diablo mountain range
+  - text: Milpitas is bisected by two major SF Bay Area freeways, 680 (The Sinclair Fwy) and 880 (The Nimitz Fwy)
+  - text: Here's a map of the city bike paths!
+  - text: Milpitas is the 5th largest city in Santa Clara County by population and the 6th largest by land area!
+    image: https://www.milpitas.gov/bike-paths/
+  - text: Milpitas is known worldwide for its appalling smell, due to a nearby landfill which borders the city
+  - text: Check out the Milpitas city website for more info!
+    image: https://www.milpitas.gov/
+  utter_milp_loc_details:
+  - text: Milpitas is located in the San Fransico Bay Area on the northeast border of the city of San Jose and south of the city of Fremont
+  - text: The approximate city center is 37.43, -121.89
+  - text: Why don't you use Google maps?
+  - text: Milpitas is about a 15 minute drive northeast of San Jose International Airpoty or about a 35 minute drive southeast of SFO or OAK
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_milp_facts
+- utter_milp_loc_details

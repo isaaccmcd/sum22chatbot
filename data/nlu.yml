@@ -1,0 +1,115 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I am great! Thanks for asking.
+    - Thanks for your help!
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: milp_facts
+  examples: |
+    - what are some facts?
+    - what is another fact?
+    - what are more facts?
+    - what are more facts about Milpitas?
+    - what is some information about Milpitas?
+    - what is another piece of info about Milpitas?
+    - what are some facts about Milpitas?
+    - tell me some things about Milpitas
+    - tell me some more about Milpitas
+    - tell me some more facts about Milpitas
+    - what are interesting facts about Milpitas?
+    - what is there to know about Milpitas?
+    - what is more to know about Milpitas?
+    - what are some fact about Milpitas?
+    - what is another fact about Milpitas?
+    - I am good. What are some facts about Milpitas?
+    - what is a fact about Milpitas
+    - what is something interesting about Milpitas?
+- intent: milp_loc_details
+  examples: |
+    - where is Milpitas?
+    - what is the location of Milpitas?
+    - where is Milpitas located?
+    - where is Milpitas in the Bay Area?
+    - where is Milpitas, California?
+    - Where is Milpitas in terms of location?
+    - what is the location of Milpitas again?

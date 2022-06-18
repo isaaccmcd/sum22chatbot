@@ -1,0 +1,69 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: get milpitas facts 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: milp_facts
+  - action: utter_milp_facts
+  - intent: milp_facts
+  - action: utter_milp_facts
+  - intent: milp_facts
+  - action: utter_milp_facts
+
+- story: get milpitas facts and loc 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: milp_facts
+  - action: utter_milp_facts
+  - intent: milp_loc_details
+  - action: utter_milp_loc_details
+  - intent: milp_facts
+  - action: utter_milp_facts
+  - intent: milp_loc_details
+  - action: utter_milp_loc_details
+
+- story: get milpitas facts and loc 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: milp_facts
+  - action: utter_milp_facts
+  - intent: milp_loc_details
+  - action: utter_milp_loc_details
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
